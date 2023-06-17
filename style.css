@@ -5,53 +5,61 @@
 }
 
 body{
-    background-color: white;
     font-family: 'Black Ops One', cursive;
 }
 
-.imagem-card{
+header{
+    color: black;
+    background-color: #E2C044;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+main {
+    background-color: #2f195f;
+    display: grid;
+    padding: 16px 16px 16px 0;
+    grid-template-columns: repeat(auto-fill, minmax(200px,400px));
+    grid-gap: 30px;
+    place-content: center;
+    width: 100%;
+}
+
+.imagem-card , .nome , .origem{
     border-radius: 5px;
+    border:0.5px solid black;
+    width: 100%;
 }
 
 .nome{
-    background-color: aqua;
-    border-radius: 5px;
+    background-color: #E2C044;
     color: rgb(0, 0, 0);
-    width: 100%;
     text-align: center;
 }
 
 .origem{
-    background-color: aqua;
-    border-radius: 5px;
-    padding: 30px 0;
+    background-color: #E2C044;
+    padding: 30px 0;    
     color: rgb(0, 0, 0);
-    width: 100%;
     text-align: center;
 }
 
 .card{
     background-color: antiquewhite;
+    border-radius: 8px;
     border:1px solid black;
     padding: 10px;
-    border-radius: 5px;
     display: flex;
     gap: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: fit-content;
     transition: all 0.4s ease-in-out;
+    width: 100%;
 }
 
 .card:hover{
     transform: scale(1.05);
-}
-
-main {
-    display: grid;
-    padding: 0 10px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
-    grid-gap: 20px;
-    width: 100%;
 }
