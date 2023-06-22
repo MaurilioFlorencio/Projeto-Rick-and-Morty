@@ -15,7 +15,7 @@ header{
     display: flex;
     justify-content: center;
     width: 100%;
-    position: sticky;
+    position: absolute;
     top: 0;
 }
 
@@ -67,13 +67,12 @@ main {
     gap: 10px;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
     border-radius: 8px;
     padding: 10px;
     width: 40%;
 }
 
-.info{
+.info {
     background-color: #B0A8B9;
     color: black;
     border:0.5px solid antiquewhite;
@@ -82,26 +81,49 @@ main {
     border-radius: 5px;
 }
 
-.container1, .container2, .container3, .container4 , .container5{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
+    width: 100%;
 }
 
-.info1 , .info2 , .info3 , .info4 , .info5{
+.info1{
     background-color: #E2C044;
     border:0.5px solid black;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
-    width: 130px;
-}
+    width: 40%;
+} 
 
-.info11 , .info22 , .info33 , .info44 , .info55{
+.info11{
     background-color: antiquewhite;
     border:0.5px solid black;
     padding: 10px;
     border-radius: 5px;
     height: 100%;
-    width: 70%;
+    width: 60%;
+}
+
+
+
+@media screen and (max-width: 768px)
+ {
+    header {
+        position: sticky;
+    }
+
+    main {
+        flex-flow: column nowrap;
+        align-items: start;
+    }
+    .card2 {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .card1 {
+        width: 100%;
+    }
 }
