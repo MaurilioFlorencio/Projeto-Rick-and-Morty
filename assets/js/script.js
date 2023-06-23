@@ -6,7 +6,7 @@ fetch("https://rickandmortyapi.com/api/character")
     res.results.forEach(perso => {
         main.innerHTML += 
         `
-        <div class="card" onclick="redirecionar()">
+        <div class="card" onclick="redirecionar(${perso.id})">
             <span class="nome">${perso.name}</span>
             <img class= "imagem-card" src="${perso.image}" alt="${perso.image}">
             <span class="origem">${perso.origin.name}</span>
@@ -16,6 +16,6 @@ fetch("https://rickandmortyapi.com/api/character")
     console.log(res.results)
 })
 
-function redirecionar (){
-    window.location.href = "info.html";
+function redirecionar (id) {
+    window.location.href = 'info.html?id=' + encodeURIComponent(id);
 }

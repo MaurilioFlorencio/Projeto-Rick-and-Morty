@@ -59,7 +59,7 @@ main {
     border-radius: 8px;
     border:1px solid black;
     padding: 10px;
-    width: 50%;
+    width: 30%;
 }
 .card2{
     background-color: transparent;
@@ -106,8 +106,6 @@ main {
     width: 60%;
 }
 
-
-
 @media screen and (max-width: 768px)
  {
     header {
@@ -117,6 +115,8 @@ main {
     main {
         flex-flow: column nowrap;
         align-items: start;
+        height: 100%;
+        width: 100%;
     }
     .card2 {
         font-size: 12px;
