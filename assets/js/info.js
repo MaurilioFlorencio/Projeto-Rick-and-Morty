@@ -39,6 +39,13 @@ fetch(`https://rickandmortyapi.com/api/character/${id}`)
                 <span class="info11">${res.location.name}</span>
             </div>   
         </div>
+        <div class="card3">
+            <button class="button" onclick="redirecionar()">X</button>
+        </div>
         `    
     });
     console.log(res.results)
+
+    function redirecionar () {
+        window.location.href = 'index.html';
+    }

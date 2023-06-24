@@ -20,9 +20,9 @@ header{
 main {
     background-color: #2f195f;
     display: grid;
-    padding: 16px 16px 16px 0;
-    grid-template-columns: repeat(auto-fill, minmax(100px,400px));
-    grid-gap: 30px;
+    padding: 16px 16px 16px 0px;
+    grid-template-columns: repeat(4, minmax(100px,400px));
+    grid-gap: 24px;
     place-content: center;
     width: 100%;
 }
@@ -52,6 +52,7 @@ main {
     border:1px solid black;
     padding: 10px;
     display: flex;
+    margin: 8px;
     gap: 10px;
     flex-direction: column;
     align-items: center;
@@ -59,8 +60,16 @@ main {
     transition: all 0.4s ease-in-out;
     width: 100%;
     cursor: pointer;
+    height: fit-content;
 }
 
 .card:hover{
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px)
+{
+    main {
+        grid-template-columns: repeat(auto-fill, minmax(100px,400px));
+    }
 }

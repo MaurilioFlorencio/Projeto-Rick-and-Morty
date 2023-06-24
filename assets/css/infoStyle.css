@@ -59,8 +59,9 @@ main {
     border-radius: 8px;
     border:1px solid black;
     padding: 10px;
-    width: 30%;
+    width: 28%;
 }
+
 .card2{
     background-color: transparent;
     display: flex;
@@ -70,6 +71,35 @@ main {
     border-radius: 8px;
     padding: 10px;
     width: 40%;
+}
+
+.card3{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    height: 75%;
+    width: 5%;
+}
+
+button{
+    background-color: #E2C044;
+    border: 1px solid antiquewhite;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+    transition: color 0.3s;
+}
+
+button:hover{
+    background-color: #AA6DA3;
+    transform: scale(1.1);
+    color: antiquewhite;
 }
 
 .info {
@@ -107,7 +137,7 @@ main {
 }
 
 @media screen and (max-width: 768px)
- {
+{
     header {
         position: sticky;
     }
@@ -118,12 +148,19 @@ main {
         height: 100%;
         width: 100%;
     }
+
+    .card1 {
+        width: 100%;
+    }
+
     .card2 {
         font-size: 12px;
         width: 100%;
     }
 
-    .card1 {
+    .card3 {
         width: 100%;
+        align-items: center;
     }
+
 }
